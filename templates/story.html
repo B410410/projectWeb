@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+
+    {% block title %}<title>作品1(msi)</title>{% endblock %}
+    
+
+    {% block content %}
+    <!-- 品牌故事 -->
+    <div class="card">
+      <div class="card-img-container">
+        <img src="{% static "images/msi-story.jpg" %}" class="card-img-top" alt="...">
+        <div class="centered-text">
+          <p>品牌故事</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">關於微星電競</h5>
+        <p class="card-text2 my-5" style="margin-left: 250px; text-align: center;">身為全球遊戲及電競領域的標竿品牌，微星科技是遊戲及電競業界最值得信賴的名字。我們因為堅持突破設計極限、追求卓越效能、導入創新科技的理念而屹立不搖，微星科技把玩家最想要的極致效能、逼真視覺、高傳真音效、精準操控及流暢直播等等電競功能整合在一起，省去玩家自行摸索及調校的繁瑣，並將系統效能推向極致。我們不斷提高標準自我要求並力行實踐，相較於其他的品牌，微星科技就是True Gaming! 是真正唯一的電競品牌。</p>
+      </div>
+    </div>
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="{% static "images/msi-gamers.jpg" %}"class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">與玩家深度結合的微星科技</h5>
+            <p class="card-text mt-5">投入專業電競硬體多年的MSI微星科技贊助全球超過20個職業電競戰隊，除了自辦MSI MGA (Masters Gaming Arena) 全球電競比賽之外，更在世界各國與玩家和粉絲面對面深度交流。遊戲及電競是MSI微星科技和玩家的共同語言。 MSI微星科技與玩家站在一起，以創新科技讓玩家在遊戲及電競的世界中迎向一個又一個的勝利。</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <script src="{% static "js/bootstrap.js" %}"></script>
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+   {% endblock %}
+

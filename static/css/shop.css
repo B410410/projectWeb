@@ -1,0 +1,324 @@
+#warp {
+	width: 950px;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+}
+#warp #content {
+	background-color: #EEE;
+	padding: 10px;
+}
+#warp #content #sidediv {
+	width: 199px;
+	margin-top: 30px;
+	padding: 10px;
+}
+#warp #content #sidediv .sidemenu {
+	border-radius: 20px 0px 20px 0px;
+	color: #FFF;
+	background-color: #666;
+	padding: 5px;
+	font-weight: bold;
+	text-align: center;
+}
+#warp #content #maindiv {
+	width: 690px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	float: left;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #CCC;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+#warp #content .gridlist {
+	width: 700px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	float: left;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #CCC;
+}
+.block_product {
+	float: left;
+	height: 260px;
+	width: 160px;
+	background-color: #FFFFFF;
+	border-radius: 0px 20px 0px 20px;
+	border: 1px solid #CCC;
+	/* [disabled]margin-top: 10px; */
+	margin-right: 10px;
+	margin-bottom: 10px;
+	-webkit-transition: background-color 10ms ease 0s;
+	-moz-transition: background-color 10ms ease 0s;
+	-ms-transition: background-color 10ms ease 0s;
+	-o-transition: background-color 10ms ease 0s;
+	transition: background-color 10ms ease 0s;
+}
+.block_product:hover {
+	background-color: #CCC;
+}
+.block_product .pro_photo {
+	height: 135px;
+	width: 135px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	-webkit-transition: color;
+	-moz-transition: color;
+	-ms-transition: color;
+	-o-transition: color;
+	transition: color;
+}
+.block_product .pro_photo .pro_name {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 10pt;
+	font-weight: bolder;
+	color: #666;
+	height: 3.2em;
+	text-align: center;
+	margin-bottom: 5px;
+	margin-top: 2px;
+}
+.block_product .pro_photo .pro_price {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	color: #F00;
+	text-align: center;
+}
+.block_product .pro_photo .pro_btn {
+	text-align: center;
+	margin-top: 5px;
+}
+
+.nav_bar {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	line-height: 120%;
+	width: 320px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#form1 {
+	margin: 0px;
+}
+#form1 th {
+	color: #FFF;
+	background-color: #999;
+}
+.title {
+	color: #000;
+	background-color: #F90;
+	display: block;
+	padding: 5px;
+	width: 120px;
+	text-align: center;
+	text-shadow: 1px 1px #CCC;
+	font-weight: bold;
+}
+
+.desc {
+	font-size: 11pt;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	margin-left: 1em;
+	line-height: 150%;
+}
+.sprice {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16pt;
+	font-weight: bolder;
+	color: #F00;
+}
+a.delcart {
+	color: #F00;
+	background-image: url(images/cross.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	display: block;
+	padding-left: 16px;
+	text-decoration: none;
+}
+#warp #header {
+	background-image: url(images/cartTop.png);
+	height: 215px;
+	width: 950px;
+}
+#warp #header .logo {
+	background-image: url(images/logo.png);
+	height: 49px;
+	width: 272px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 10px;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+#warp #footer {
+	background-image: url(images/cartbot.png);
+	height: 48px;
+	width: 950px;
+}
+#sidediv ul {
+	list-style-type: none;
+	list-style-image: url(images/icon_red.gif);
+	line-height: 150%;
+}
+.message {
+  width: 80%; /* 設定元素寬度為父元素寬度的90% */
+  color: #069; /* 設定文字顏色為深綠色 */
+  background-color: #FCC; /* 設定背景顏色為淺紅色 */
+  margin-top: 10px; /* 與上方的距離為10像素 */
+  margin-right: auto; /* 自動計算右側外邊距，使元素水平置中 */
+  margin-left: auto; /* 自動計算左側外邊距，使元素水平置中 */
+  border-radius: 10px; /* 設定圓角邊框半徑為10像素 */
+  background-image: url(images/icon_warning.png); /* 背景圖像的URL */
+  background-position: 10px center; /* 背景圖像位置 */
+  background-repeat: no-repeat; /* 不重複顯示背景圖像 */
+  padding-top: 10px; /* 上邊距為10像素 */
+  padding-right: 10px; /* 右內邊距為10像素 */
+  padding-bottom: 10px; /* 下邊距為10像素 */
+  padding-left: 30px; /* 左內邊距為30像素 */
+  margin-bottom: 10px; /* 與下方的距離為10像素 */
+}
+.nav_bar a {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11pt;
+	color: #F60;
+	background-image: url(images/icon_red.gif);
+	display: block;
+	background-repeat: no-repeat;
+	width: 80px;
+	background-position: left center;
+	text-indent: 20px;
+	float: left;
+}
+.subject {
+	font-size: 12pt;
+	font-weight: bold;
+	color: #060;
+	margin-bottom: 10px;
+	background-image: url(images/icon_green.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 16px;
+}
+
+
+.bg-light {
+  background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.navbar-light .navbar-brand {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(255, 255, 255);
+}
+
+.navbar-brand {
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 550px;
+  font-size: 2rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
+  color: rgba(237, 7, 7, 0.9);
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+  color: rgba(247, 4, 4, 0.7);
+}
+
+
+.search {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  padding: 0 20px;
+}
+
+.search input[type="search"] {
+  padding: 0 5px;
+  height: 25px;
+  width: 200px;
+  margin-right: 10px; 
+}
+
+.search button {
+  padding: 6px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* 聯絡資訊樣式 */
+.information {
+  background-color: #191919; /* 設定背景顏色為深灰色 */
+  color: white; /* 設定文字顏色為白色 */
+  height: 150px; /* 設定元素高度為150像素 */
+  position: fixed;
+  bottom: 0;
+  width: 100%; /* 設定寬度為100%，以填滿整個視窗寬度 */
+}
+
+/* 商品標題 */
+.information h2 {
+  margin-top: 20px;
+  /* 向上移動10像素 */
+  padding: 0 20px;
+}
+
+
+/* 商品網址 */
+.information a {
+  color: white;
+  font-size: 15px;
+  padding: 0 20px;
+}
+
+.card-title{
+  font-size: 60px;
+  text-align: center;
+}
+
+/* 用於控制固定長度換行和行間距的樣式 */
+.card-text {
+  font-size: 20px;
+  white-space: pre-line; /* 允許保留換行字符 */
+  line-height: 1.5; /* 調整行間距，根據需要調整值 */
+  max-width: 1000px; /* 設置最大寬度，根據需要調整值 */
+}
+
+.card-text2 {
+  font-size: 20px;
+  white-space: pre-line; /* 允許保留換行字符 */
+  line-height: 1.5; /* 調整行間距，根據需要調整值 */
+  max-width: 1000px; /* 設置最大寬度，根據需要調整值 */
+}
+
+/* 品牌故事 */
+.card-img-container {
+  position: relative;
+}
+
+.centered-text {
+  font-size: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* 可選：設定文字顏色為白色 */
+  padding: 10px; /* 可選：設定文字周圍的內邊距 */
+}
+

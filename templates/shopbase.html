@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>購物網</title>
+    {% load static %}
+    <link href="{% static "css/bootstrap.css" %}" rel="stylesheet" type="text/css" />
+    <link href="{% static "css/shop.css" %}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+     <!-- 頁面頂部區域 -->
+      <div> 
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="/index/">MSI</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="/index/">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/story/">品牌介紹</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/logout/">登出</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/shop/">商品</a>
+                    </li>
+                  </ul>
+                  <form class="search">
+                    <input class="form-control me-2" type="search" placeholder="商品名稱" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">查詢</button>
+                  </form>
+                </div>
+              </div>
+            </nav>
+      </div>
+        <div id="content">
+            <div id="sidediv" style="float: right; margin-right: 10px; margin-top: 50px;">
+                <div class="sidemenu">資訊中心</div>
+                <ul>
+                    <li><a href="/cart/">檢視購物車</a></li>
+                    <li><a href="/cartordercheck/">查詢訂單</a></li>
+                    <li><a href="/index/">回到首頁</a></li>
+                </ul>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+        
+        {% block content %}{% endblock %}
+        
+        <!-- 頁面底部區域 -->
+         <div class="information">
+           <h2 style="font-family: 'Microsoft JhengHei', sans-serif;">線上商城</h2>
+           <a href="https://tw-store.msi.com/">商城首頁</a><br>
+           <a href="https://tw-store.msi.com/collections/monitor">螢幕</a><br>
+           <a href="https://tw-store.msi.com/collections/notebook">筆記型電腦</a><br>
+           <a href="https://tw-store.msi.com/collections/desktop-pcs">桌上型電腦</a><br>
+         </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>購物網(未登入)</title>
+    {% load static %}
+    <link href="{% static "css/bootstrap.css" %}" rel="stylesheet" type="text/css" />
+    <link href="{% static "css/shop.css" %}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+     <!-- 頁面頂部區域 -->
+      <div> 
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="/index2/">MSI</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="/index2/">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/story2/">品牌介紹</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/login/">登入</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/shop2/">商品</a>
+                    </li>
+                  </ul>
+                  <form class="search">
+                    <input class="form-control me-2" type="search" placeholder="商品名稱" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">查詢</button>
+                  </form>
+                </div>
+              </div>
+            </nav>
+      </div>        
+        <div id="maindiv">
+          {% for product in productall %}
+            <div class="block_product pro_photo">
+              <div class="pro_photo">
+                <a href="/detail2/{{product.id}}"><img src="/static/images/{{product.pimages}}" alt="產品詳細資料" width="135" height="135" border="0" /></a>
+                <div class="pro_name"><a href="/detail2/{{product.id}}">{{product.pname}}</a></div>
+                <div class="pro_price">價錢 : {{product.pprice}}元</div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+        
+        <!-- 頁面底部區域 -->
+         <div class="information">
+           <h2 style="font-family: 'Microsoft JhengHei', sans-serif;">線上商城</h2>
+           <a href="https://tw-store.msi.com/">商城首頁</a><br>
+           <a href="https://tw-store.msi.com/collections/monitor">螢幕</a><br>
+           <a href="https://tw-store.msi.com/collections/notebook">筆記型電腦</a><br>
+           <a href="https://tw-store.msi.com/collections/desktop-pcs">桌上型電腦</a><br>
+         </div>
+</body>
+</html>

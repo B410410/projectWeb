@@ -1,0 +1,228 @@
+.bg-light {
+  background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.navbar-light .navbar-brand {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(255, 255, 255);
+}
+
+.navbar-nav .dropdown-menu {
+  position: static;
+}
+
+.navbar-brand {
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 550px;
+  font-size: 2rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
+  color: rgba(237, 7, 7, 0.9);
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+  color: rgba(247, 4, 4, 0.7);
+}
+
+
+.search {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  padding: 0 20px;
+}
+
+.search input[type="search"] {
+  padding: 0 5px;
+  height: 25px;
+  width: 200px;
+  margin-right: 10px; 
+}
+
+.search button {
+  padding: 6px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#warp {
+  height: 50%;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  width: 720px;
+} 
+
+
+/* 圖片輪播 */
+.slideshow-container {
+  background-color: white;
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 50px 170px;
+  text-align: center;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+img {
+  width: 700px;
+  height: 300px;
+}
+
+/* 聯絡資訊樣式 */
+.information {
+  background-color: #191919; /* 設定背景顏色為深灰色 */
+  color: white; /* 設定文字顏色為白色 */
+  height: 170px; /* 設定元素高度為150像素 */
+  bottom: 0; /* 將元素移到底部 */
+  width: 100%; /* 設定寬度為100%，以填滿整個視窗寬度 */
+}
+
+/* 商品標題 */
+.information h2 {
+  margin-top: 20px;
+  /* 向上移動10像素 */
+  padding: 0 20px;
+}
+
+/* 商品網址 */
+.information a {
+  color: white;
+  font-size: 15px;
+  padding: 0 20px;
+}
+
+.boxLogin {
+  width: 700px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 0px;
+  background-image: url(images/adminlogin_bg.png);
+}
+
+.boxLogin  div.fields {
+  width: 360px;
+  height: 185px;
+  overflow: hidden;
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px #999;
+  margin-left: 290px;
+  padding-top: 20px;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 50px;
+}
+
+.boxLogin  .toolTip{
+  width:416px;
+  float:right;
+}
+
+.boxLogin  .fields p.error {
+  background:transparent;
+}
+
+.fields p.rem {
+  padding:10px 0 0 100px;
+}
+
+.fields p label { display:inline-block;}
+
+.action {
+  padding:20px 74px 0 0;
+  text-align:right;
+}
+
+.small {
+  width: 84px;
+  font-size: 13px;
+  text-shadow: 1px 1px 0px #CCC;
+}
+
+.sep { margin-top:15px; }
+
+/* 輪播設定 */
+.carousel-item {
+  position: relative;
+  display: none;
+  float: left;
+  width: 100%;
+  margin-right: -100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: transform 0.6s ease-in-out;
+}
+
+/* 輪播圖像的大小 */
+.carousel-inner .carousel-item img {
+  width: 100%; /* 图像宽度设置为100%，以适应容器 */
+  height: 100%; /* 图像高度设置为100%，以适应容器 */
+  object-fit: cover; /* 保持图像的纵横比，剪裁以填充容器 */
+}
+
+/* 輪播容器的大小 */
+#carouselExampleIndicators {
+  width: 600px;
+  height: 400px;
+  margin: 50px auto;
+  text-align: center; 
+}
+
+
+/* 輪播箭頭的颜色 */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: #000;
+}
+
+
+.card-title{
+  font-size: 60px;
+  text-align: center;
+}
+
+/* 用於控制固定長度換行和行間距的樣式 */
+.card-text {
+  font-size: 20px;
+  white-space: pre-line; /* 允許保留換行字符 */
+  line-height: 1.5; /* 調整行間距，根據需要調整值 */
+  max-width: 1000px; /* 設置最大寬度，根據需要調整值 */
+}
+
+.card-text2 {
+  font-size: 20px;
+  white-space: pre-line; /* 允許保留換行字符 */
+  line-height: 1.5; /* 調整行間距，根據需要調整值 */
+  max-width: 1000px; /* 設置最大寬度，根據需要調整值 */
+}
+
+/* 品牌故事 */
+.card-img-container {
+  position: relative;
+}
+
+.centered-text {
+  font-size: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* 可選：設定文字顏色為白色 */
+  padding: 10px; /* 可選：設定文字周圍的內邊距 */
+}

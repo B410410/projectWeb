@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>商品資訊</title>
+    {% load static %}
+    <link href="{% static "css/bootstrap.css" %}" rel="stylesheet" type="text/css" />
+    <link href="{% static "css/shop.css" %}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+     <!-- 頁面頂部區域 -->
+      <div> 
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="/index/">MSI</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="/index/">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/story/">品牌介紹</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/logout/">登出</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/shop/">商品</a>
+                    </li>
+                  </ul>
+                  <form class="search">
+                    <input class="form-control me-2" type="search" placeholder="商品名稱" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">查詢</button>
+                  </form>
+                </div>
+              </div>
+            </nav>
+      </div>
+        <div id="content">
+            <div id="sidediv" style="float: right; margin-right: 10px; margin-top: 50px;">
+                <div class="sidemenu">資訊中心</div>
+                <ul>
+                    <li><a href="/cart/">檢視購物車</a></li>
+                    <li><a href="/cartordercheck/">查詢訂單</a></li>
+                    <li><a href="/index/">回到首頁</a></li>
+                </ul>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+        <div id="maindiv">
+      	<table width="100%" border="0" align="center" cellpadding="4" cellspacing="0">
+      	  <tr valign="top">
+      		<td width="200" align="center"><p><img src="/static/images/{{product.pimages}}" />
+      		  <p class="sprice"> 特價 <br />${{product.pprice}}</p></td>
+      		<td><p class="subject"> 產品名稱 </p>
+      		  <p class="desc"> {{product.pname}} </p>
+      		  <p class="subject">產品介紹</p>
+      		  <p class="desc"> {{product.pdescription}} </p></td>
+      	  </tr>
+      	</table>
+      	<p align="center"> 
+      	  <a href="/addtocart/add/{{product.id}}/"><img src="{% static "images/icon_cart.png" %}" width="102" height="27" border="0" /></a>　
+      	  <a href="javascript:;" onclick="window.history.back();"><img src="{% static "images/icon_back.png" %}" width="102" height="27" border="0" /></a>
+      	</p>	  
+        </div>
+</body>
+</html>
